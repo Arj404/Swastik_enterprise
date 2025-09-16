@@ -3,20 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Swastik Enterprise</title>
+    <title>Swastik Enterprise - Eco-Friendly Solar & Transformer Solutions</title>
+    <meta name="description" content="Swastik Enterprise provides eco-friendly solar and transformer solutions to reduce carbon footprints and energy costs. Join us in building a sustainable future.">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <nav class="navbar" role="banner">
       <span class="logo">Swastik Enterprise</span>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" aria-current="page">Home</a></li>
         <li><a href="solar.html">Solar</a></li>
         <li><a href="transformers.html">Transformers</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <main>
+    <main id="main-content" role="main">
       <section class="hero">
         <h1>Empowering India with Clean Energy</h1>
         <p class="subtitle">
@@ -25,7 +29,26 @@
           sustainable future with reliable, high-performance products and expert
           service.
         </p>
-        <img src="solar-banner.jpg" alt="Solar Panels" class="hero-img" />
+        
+        <!-- Environmental Impact Statistics -->
+        <div style="background: rgba(255, 255, 255, 0.85); border-radius: 12px; padding: 1.5rem; margin: 2rem auto; max-width: 800px; box-shadow: 0 4px 15px rgba(46, 125, 50, 0.15);">
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div style="font-size: 2.5rem; font-weight: bold; color: var(--dark-green);">500+</div>
+              <div>Tons of CO₂ Saved Annually</div>
+            </div>
+            <div class="stat-item">
+              <div style="font-size: 2.5rem; font-weight: bold; color: var(--dark-green);">50%</div>
+              <div>Energy Cost Reduction</div>
+            </div>
+            <div class="stat-item">
+              <div style="font-size: 2.5rem; font-weight: bold; color: var(--dark-green);">25+</div>
+              <div>Years of Equipment Life</div>
+            </div>
+          </div>
+        </div>
+        
+        <img src="solar-banner.jpg" alt="Solar Panels in eco-friendly installation" class="hero-img" loading="lazy" />
         <div
           style="
             display: flex;
@@ -38,16 +61,28 @@
           <a href="transformers.html" class="cta">View Transformers</a>
         </div>
         <div style="margin-top: 2rem; color: #444; font-size: 1.1rem">
-          <strong>Why Choose Us?</strong>
+          <strong>Why Choose Our Eco-Friendly Solutions?</strong>
           <ul style="text-align: left; max-width: 500px; margin: 1rem auto">
-            <li>Cutting-edge solar technology for maximum efficiency</li>
-            <li>Robust transformer products for every application</li>
-            <li>Expert installation and after-sales support</li>
-            <li>Trusted by leading businesses and homeowners</li>
+            <li>Cutting-edge solar technology for maximum efficiency and carbon offset</li>
+            <li>Energy-efficient transformers that reduce waste and power consumption</li>
+            <li>Expert installation and after-sales support with minimal environmental impact</li>
+            <li>Trusted by leading businesses and homeowners for sustainable energy solutions</li>
           </ul>
+        </div>
+        
+        <!-- Environmental Commitment -->
+        <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(46, 125, 50, 0.1); border-radius: 12px; max-width: 800px; margin: 2rem auto;">
+          <h3 style="color: var(--dark-green); text-align: center;">Our Environmental Commitment</h3>
+          <p style="text-align: center; max-width: 600px; margin: 0 auto;">
+            At Swastik Enterprise, we're committed to reducing carbon footprints through innovative clean energy solutions. 
+            Every installation helps create a greener, more sustainable future for generations to come.
+          </p>
         </div>
       </section>
     </main>
+    <footer role="contentinfo">
+      <p>&copy; 2025 Swastik Enterprise. All rights reserved.</p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

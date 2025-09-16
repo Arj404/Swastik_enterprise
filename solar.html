@@ -4,56 +4,96 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Solar Products | Swastik Enterprise</title>
+    <meta name="description" content="Discover our eco-friendly solar solutions that significantly reduce carbon footprints and energy costs. Tailored for homes, businesses, and industries.">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <nav class="navbar" role="banner">
       <span class="logo">Swastik Enterprise</span>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="solar.html">Solar</a></li>
+        <li><a href="solar.html" aria-current="page">Solar</a></li>
         <li><a href="transformers.html">Transformers</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <main>
+    <main id="main-content" role="main">
       <section class="page">
-        <h2>Solar Solutions</h2>
+        <h2>Solar Solutions for a Greener Future</h2>
         <p>
           Harness the power of the sun with our advanced solar products. Swastik
           Enterprise offers tailored solutions for homes, businesses, and
-          industries—helping you save on energy costs and reduce your carbon
+          industries—helping you save on energy costs and significantly reduce your carbon
           footprint.
         </p>
+        
+        <!-- Environmental Benefits Section -->
+        <div style="background: rgba(255, 255, 255, 0.9); border-radius: 12px; padding: 1.5rem; margin: 2rem auto; max-width: 700px; box-shadow: 0 4px 15px rgba(46, 125, 50, 0.15);">
+          <h3 style="color: var(--dark-green); text-align: center;">Environmental Impact</h3>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div style="font-size: 2rem; font-weight: bold; color: var(--primary-green);">300+</div>
+              <div>Tons CO₂ Reduced Per Year</div>
+            </div>
+            <div class="stat-item">
+              <div style="font-size: 2rem; font-weight: bold; color: var(--primary-green);">₹1,00,000+</div>
+              <div>Energy Savings Annually</div>
+            </div>
+            <div class="stat-item">
+              <div style="font-size: 2rem; font-weight: bold; color: var(--primary-green);">25</div>
+              <div>Year Panel Lifespan</div>
+            </div>
+          </div>
+        </div>
+        
         <img
           src="solar-products.jpg"
-          alt="Solar Products"
+          alt="Solar Panels in eco-friendly installation reducing carbon footprint"
           class="section-img"
+          loading="lazy"
         />
+        
+        <!-- Product Information -->
         <div style="margin: 2rem auto; max-width: 600px">
           <ul style="text-align: left">
             <li>
               <strong>Residential Solar Panels:</strong> High-efficiency panels
-              for homes, easy installation, and long-term savings.
+              for homes, easy installation, and long-term savings. Reduce your household carbon footprint by up to 80%.
             </li>
             <li>
               <strong>Commercial Solar Solutions:</strong> Scalable systems for
-              offices, factories, and institutions.
+              offices, factories, and institutions. Significantly reduce your business's environmental impact while cutting energy costs.
             </li>
             <li>
               <strong>Solar Inverters:</strong> Reliable, smart inverters for
-              optimal energy conversion.
+              optimal energy conversion with minimal environmental impact.
             </li>
             <li>
               <strong>Custom Solar Projects:</strong> Designed to meet your
-              unique requirements.
+              unique requirements with maximum efficiency and minimal environmental footprint.
             </li>
           </ul>
         </div>
+        
+        <!-- Recycling Information -->
+        <div style="background: rgba(46, 125, 50, 0.1); border-radius: 12px; padding: 1.5rem; margin: 2rem auto; max-width: 700px;">
+          <h3 style="color: var(--dark-green); text-align: center;">Sustainable & Recyclable</h3>
+          <p style="text-align: center;">
+            Our solar panels are made with recyclable materials and have a lifespan of 25+ years. 
+            At the end of their life, up to 95% of the materials can be recycled, ensuring minimal environmental impact.
+          </p>
+        </div>
+        
         <div style="margin-top: 2rem">
-          <a href="contact.html" class="cta">Get a Free Consultation</a>
+          <a href="contact.html" class="cta">Get a Free Environmental Impact Consultation</a>
         </div>
       </section>
     </main>
+    <footer role="contentinfo">
+      <p>&copy; 2025 Swastik Enterprise. All rights reserved.</p>
+    </footer>
   </body>
 </html>
