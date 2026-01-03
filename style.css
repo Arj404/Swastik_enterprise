@@ -270,7 +270,9 @@ img {
 
 /* Hero Section - Immersive */
 .hero {
-  background: var(--gradient-hero);
+  background: linear-gradient(-45deg, #020617, #0F172A, #1E293B, #0F172A);
+  background-size: 400% 400%;
+  animation: gradient-shift 15s ease infinite;
   color: white;
   min-height: 100vh;
   display: flex;
@@ -287,7 +289,7 @@ img {
   position: absolute;
   width: 700px;
   height: 700px;
-  background: radial-gradient(circle, rgba(5, 150, 105, 0.2) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(5, 150, 105, 0.25) 0%, transparent 70%);
   top: -150px;
   right: -150px;
   border-radius: 50%;
@@ -300,7 +302,7 @@ img {
   position: absolute;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(217, 119, 6, 0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(217, 119, 6, 0.2) 0%, transparent 70%);
   bottom: -150px;
   left: -150px;
   border-radius: 50%;
@@ -323,11 +325,13 @@ img {
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: var(--space-lg);
-  background: linear-gradient(135deg, #FFFFFF 0%, #E2E8F0 100%);
+  background: linear-gradient(90deg, #FFFFFF 0%, #94A3B8 25%, #FFFFFF 50%, #94A3B8 75%, #FFFFFF 100%);
+  background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   letter-spacing: -0.03em;
+  animation: shimmer 4s linear infinite;
 }
 
 .hero p {
@@ -362,12 +366,14 @@ img {
   background: var(--primary);
   color: white;
   box-shadow: 0 4px 14px rgba(5, 150, 105, 0.35);
+  animation: pulse-glow 3s ease-in-out infinite;
 }
 
 .btn-primary:hover {
   background: var(--primary-dark);
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(5, 150, 105, 0.4);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 30px rgba(5, 150, 105, 0.5);
+  animation: none;
 }
 
 .btn-accent {
@@ -399,7 +405,7 @@ img {
   background: var(--bg-surface);
   border-radius: 20px;
   padding: var(--space-xl);
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow-sm), inset 0 1px 0 rgba(255, 255, 255, 0.8);
   border: 1px solid var(--border-light);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
@@ -408,9 +414,9 @@ img {
 }
 
 .card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-xl);
-  border-color: rgba(5, 150, 105, 0.3);
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl), 0 0 40px rgba(5, 150, 105, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  border-color: rgba(5, 150, 105, 0.4);
 }
 
 .card::before {
@@ -441,10 +447,12 @@ img {
   color: var(--primary-dark);
   margin-bottom: var(--space-lg);
   transition: transform 0.3s;
+  animation: icon-float 4s ease-in-out infinite;
 }
 
 .card:hover .card-icon {
   transform: scale(1.1) rotate(5deg);
+  animation: none;
 }
 
 /* Stat Numbers */
@@ -530,6 +538,58 @@ img {
 
   50% {
     transform: translate(25px, 25px);
+  }
+}
+
+/* Shimmer Animation for Hero Text */
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
+}
+
+/* Pulsing Glow for CTA Buttons */
+@keyframes pulse-glow {
+
+  0%,
+  100% {
+    box-shadow: 0 4px 14px rgba(5, 150, 105, 0.35);
+  }
+
+  50% {
+    box-shadow: 0 4px 30px rgba(5, 150, 105, 0.6), 0 0 60px rgba(5, 150, 105, 0.3);
+  }
+}
+
+/* Animated Gradient Background */
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Icon Float Animation */
+@keyframes icon-float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
   }
 }
 
@@ -658,4 +718,30 @@ footer a:hover {
     padding: 0.875rem 1.75rem;
     font-size: 0.9375rem;
   }
+}
+
+/* Partner Logo Styles */
+.logo-grid {
+  justify-content: center;
+}
+
+.logo-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+  min-height: 180px;
+}
+
+.partner-logo {
+  max-width: 100%;
+  max-height: 100px;
+  object-fit: contain;
+  width: auto;
+  border-radius: 0;
+  transition: transform 0.3s;
+}
+
+.logo-card:hover .partner-logo {
+  transform: scale(1.1);
 }
