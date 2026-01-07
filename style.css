@@ -479,6 +479,13 @@ img {
   margin-bottom: var(--space-xs);
 }
 
+/* Stats Container - Overlap Effect */
+.stats-container {
+  position: relative;
+  z-index: 10;
+  margin-top: -5rem;
+}
+
 /* Marquee / Infinite Scroll */
 .marquee-container {
   overflow: hidden;
@@ -770,6 +777,11 @@ footer a:hover {
     padding: 0 var(--space-md);
   }
 
+  /* Reset overlap on mobile to prevent collision */
+  .stats-container {
+    margin-top: 0;
+  }
+
   .grid-2 {
     grid-template-columns: 1fr;
     gap: var(--space-lg);
@@ -787,6 +799,21 @@ footer a:hover {
   .grid-3,
   .grid-4 {
     grid-template-columns: 1fr;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Handle long words in footer */
+  footer li span {
+    word-break: break-all;
   }
 }
 
@@ -812,9 +839,9 @@ footer a:hover {
     width: 100%;
   }
 
-  /* Handle long words in footer */
+  /* Handle long words in footer - Base mobile adjustment */
   footer li span {
-    word-break: break-word;
+    word-break: break-all;
   }
 }
 
