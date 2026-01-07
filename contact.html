@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body>
+<body class="theme-green">
 
   <nav class="navbar">
     <div class="nav-container">
@@ -34,149 +34,127 @@
   </nav>
 
   <!-- Header -->
-  <header class="section"
-    style="background: var(--gradient-green); min-height: 50vh; display: flex; align-items: center; padding-top: 8rem;">
-    <div class="container hero-content">
-      <span style="color: var(--primary-dark); font-weight: 700; letter-spacing: 2px;">GET IN TOUCH</span>
-      <h1 style="color: var(--secondary); margin-bottom: 1rem; background: none; -webkit-text-fill-color: initial;">
-        Let's Build a Greener Future</h1>
-      <p style="color: var(--text-muted);">We're here to answer your questions and help you with your energy needs.</p>
+  <header class="section hero-header" style="background: var(--gradient-green);">
+    <div class="container hero-content animate-entry">
+      <span class="text-primary font-bold" style="letter-spacing: 2px;">GET IN TOUCH</span>
+      <h1 class="mb-md mt-sm text-secondary">Let's Build a Greener Future</h1>
+      <p class="text-muted">We're here to answer your questions and help you with your energy needs.</p>
     </div>
   </header>
 
   <section class="section">
     <div class="container">
-      <div class="grid-2" style="gap: 4rem;">
-        <!-- Contact Info -->
-        <div>
-          <h2 style="margin-bottom: 2rem;">Contact Information</h2>
-
-          <div class="card" style="margin-bottom: 2rem; padding: 2rem;">
-            <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
-              <div class="card-icon" style="width: 50px; height: 50px; margin-bottom: 0; font-size: 1.2rem;">
+      <div class="grid-2 gap-xl">
+        <div class="card bg-surface-alt h-100 stagger-1">
+          <h2 class="mb-lg text-secondary">Contact Information</h2>
+          <ul class="d-flex" style="flex-direction: column; gap: 1.5rem;">
+            <li class="d-flex gap-md items-start">
+              <div class="icon-box-sm text-primary">
                 <i class="fas fa-map-marker-alt"></i>
               </div>
               <div>
-                <h4 style="margin-bottom: 0.5rem; color: var(--secondary);">Sales Office</h4>
-                <p class="text-muted">
-                  GT Road, Near City Police Station 1,<br>
-                  Khanna, 141401<br>
-                  Distt. Ludhiana, Punjab
-                </p>
+                <strong class="d-block mb-xs font-medium text-secondary">Our Office</strong>
+                <p class="text-muted">GT Road, Near City Police Station 1,<br>Khanna, Punjab 141401</p>
               </div>
-            </div>
-
-            <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
-              <div class="card-icon" style="width: 50px; height: 50px; margin-bottom: 0; font-size: 1.2rem;">
+            </li>
+            <li class="d-flex gap-md items-start">
+              <div class="icon-box-sm text-primary">
                 <i class="fas fa-phone"></i>
               </div>
               <div>
-                <h4 style="margin-bottom: 0.5rem; color: var(--secondary);">Phone</h4>
-                <p class="text-muted" style="margin-bottom: 0.25rem;">
-                  <a href="tel:+9198150011689" style="color: var(--primary);">+91 98150-01168</a>
-                </p>
-                <p class="text-muted">
-                  <a href="tel:+919653202260" style="color: var(--primary);">+91 96532-02260</a>
-                </p>
+                <strong class="d-block mb-xs font-medium text-secondary">Phone</strong>
+                <p class="text-muted">+91 98150-01168</p>
+                <p class="text-muted">+91 98962-97068</p>
               </div>
-            </div>
-
-            <div style="display: flex; gap: 1rem;">
-              <div class="card-icon" style="width: 50px; height: 50px; margin-bottom: 0; font-size: 1.2rem;">
+            </li>
+            <li class="d-flex gap-md items-start">
+              <div class="icon-box-sm text-primary">
                 <i class="fas fa-envelope"></i>
               </div>
               <div>
-                <h4 style="margin-bottom: 0.5rem; color: var(--secondary);">Email</h4>
-                <p class="text-muted">
-                  <a href="mailto:powertech.swastik@gmail.com"
-                    style="color: var(--primary);">powertech.swastik@gmail.com</a>
-                </p>
+                <strong class="d-block mb-xs font-medium text-secondary">Email</strong>
+                <p class="text-muted">powertech.swastik@gmail.com</p>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
 
-        <!-- Contact Form -->
-        <div>
-          <div class="card">
-            <h3 style="margin-bottom: 1.5rem;">Send us a Message</h3>
-            <form action="#" method="POST">
-              <div style="margin-bottom: 1.5rem;">
-                <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Full Name</label>
-                <input type="text" id="name" name="name" class="form-control" style="width: 100%;" required
-                  placeholder="Your Name">
+        <div class="card p-lg stagger-2">
+          <h2 class="mb-md text-secondary">Send us a Message</h2>
+          <p class="text-muted mb-lg">Fill out the form below and we'll get back to you shortly.</p>
+          <form style="display: flex; flex-direction: column; gap: 1rem;">
+            <div class="grid-2 gap-md">
+              <div class="form-group">
+                <label class="font-medium mb-xs d-block text-secondary">First Name</label>
+                <input type="text" class="form-control" placeholder="John">
               </div>
-              <div style="margin-bottom: 1.5rem;">
-                <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Email
-                  Address</label>
-                <input type="email" id="email" name="email" class="form-control" style="width: 100%;" required
-                  placeholder="name@example.com">
+              <div class="form-group">
+                <label class="font-medium mb-xs d-block text-secondary">Last Name</label>
+                <input type="text" class="form-control" placeholder="Doe">
               </div>
-              <div style="margin-bottom: 1.5rem;">
-                <label for="phone" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Phone Number</label>
-                <input type="tel" id="phone" name="phone" class="form-control" style="width: 100%;"
-                  placeholder="+91 98765 43210">
-              </div>
-              <div style="margin-bottom: 1.5rem;">
-                <label for="interest" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Interested
-                  In</label>
-                <select id="interest" name="interest" class="form-control" style="width: 100%;">
-                  <option value="solar">Solar Solution</option>
-                  <option value="transformer">Transformer</option>
-                  <option value="other">Other Inquiry</option>
-                </select>
-              </div>
-              <div style="margin-bottom: 1.5rem;">
-                <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Message</label>
-                <textarea id="message" name="message" rows="4" class="form-control" style="width: 100%;" required
-                  placeholder="How can we help you?"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send
-                Message</button>
-            </form>
-          </div>
+            </div>
+            <div class="form-group">
+              <label class="font-medium mb-xs d-block text-secondary">Email Address</label>
+              <input type="email" class="form-control" placeholder="john@example.com">
+            </div>
+            <div class="form-group">
+              <label class="font-medium mb-xs d-block text-secondary">Subject</label>
+              <select class="form-control">
+                <option>Solar Installation Inquiry</option>
+                <option>Transformer Inquiry</option>
+                <option>General Support</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="font-medium mb-xs d-block text-secondary">Message</label>
+              <textarea class="form-control" rows="4" placeholder="How can we help you?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary mt-sm">Send Message</button>
+          </form>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
+  <footer class="section footer">
     <div class="container">
-      <div class="grid-3" style="gap: 4rem; margin-bottom: 3rem;">
+      <div class="grid-3 mb-xl">
         <div>
-          <a href="#" class="logo" style="color: white; margin-bottom: 1.5rem;">Swastik Enterprise</a>
-          <p style="opacity: 0.7;">Driving the transition towards clean energy.</p>
+          <a href="#" class="logo mb-md text-main">
+            <img src="assets/logo.png" alt="Swastik Enterprise Logo" style="height: 32px; width: auto;">
+            Swastik Enterprise
+          </a>
+          <p class="text-muted opacity-80">Driving the transition towards clean energy with Swastik Powertech.
+            Reliable, sustainable, and future-ready solutions for all.</p>
         </div>
         <div>
-          <h4 style="color: white; margin-bottom: 1.5rem;">Quick Links</h4>
-          <ul style="display: flex; flex-direction: column; gap: 0.75rem;">
-            <li><a href="index.html" style="opacity: 0.7;">Home</a></li>
-            <li><a href="solar.html" style="opacity: 0.7;">Solar Solutions</a></li>
-            <li><a href="transformers.html" style="opacity: 0.7;">Transformers</a></li>
-            <li><a href="contact.html" style="opacity: 0.7;">Contact Us</a></li>
+          <h4 class="text-main mb-md">Quick Links</h4>
+          <ul class="d-flex" style="flex-direction: column; gap: 0.75rem;">
+            <li><a href="index.html" class="text-muted hover-primary">Home</a></li>
+            <li><a href="solar.html" class="text-muted hover-primary">Solar Solutions</a></li>
+            <li><a href="transformers.html" class="text-muted hover-primary">Transformers</a></li>
+            <li><a href="contact.html" class="text-muted hover-primary">Contact Us</a></li>
           </ul>
         </div>
         <div>
-          <h4 style="color: white; margin-bottom: 1.5rem;">Contact Info</h4>
-          <ul style="display: flex; flex-direction: column; gap: 1rem;">
-            <li style="display: flex; gap: 1rem; opacity: 0.7;">
-              <i class="fas fa-map-marker-alt" style="margin-top: 5px;"></i>
+          <h4 class="text-main mb-md">Contact Info</h4>
+          <ul class="d-flex" style="flex-direction: column; gap: 1rem;">
+            <li class="d-flex gap-md text-muted">
+              <i class="fas fa-map-marker-alt mt-xs"></i>
               <span>GT Road, Near City Police Station 1, Khanna, Punjab</span>
             </li>
-            <li style="display: flex; gap: 1rem; opacity: 0.7;">
-              <i class="fas fa-phone" style="margin-top: 5px;"></i>
+            <li class="d-flex gap-md text-muted">
+              <i class="fas fa-phone mt-xs"></i>
               <span>+91 98150-01168</span>
             </li>
-            <li style="display: flex; gap: 1rem; opacity: 0.7;">
-              <i class="fas fa-envelope" style="margin-top: 5px;"></i>
+            <li class="d-flex gap-md text-muted">
+              <i class="fas fa-envelope mt-xs"></i>
               <span>powertech.swastik@gmail.com</span>
             </li>
           </ul>
         </div>
       </div>
-      <div
-        style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; text-align: center; opacity: 0.5; font-size: 0.9rem;">
+      <div class="border-top-light pt-lg text-center opacity-60 text-sm" style="margin: 1.5rem;">
         <p>&copy; 2025 Swastik Enterprise. All rights reserved.</p>
       </div>
     </div>

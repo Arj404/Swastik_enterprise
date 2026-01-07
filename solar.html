@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body>
+<body class="theme-yellow">
 
   <nav class="navbar">
     <div class="nav-container">
@@ -35,13 +35,12 @@
   </nav>
 
   <!-- Page Header -->
-  <header class="section"
-    style="background: var(--gradient-solar); min-height: 50vh; display: flex; align-items: center; padding-top: 8rem;">
-    <div class="container hero-content">
-      <span style="color: var(--accent); font-weight: 700; letter-spacing: 2px;">CLEAN ENERGY</span>
-      <h1 style="color: var(--secondary); margin-bottom: 1rem; background: none; -webkit-text-fill-color: initial;">
-        Comprehensive Solar Solutions</h1>
-      <p style="color: var(--text-muted);">From consultation to installation, we empower you with clean energy that
+  <!-- Page Header -->
+  <header class="section hero-header" style="background: var(--gradient-solar);">
+    <div class="container hero-content animate-entry">
+      <span class="text-accent font-bold" style="letter-spacing: 2px;">CLEAN ENERGY</span>
+      <h1 class="mb-md mt-sm text-secondary">Comprehensive Solar Solutions</h1>
+      <p class="text-muted">From consultation to installation, we empower you with clean energy that
         reduces costs and carbon footprint.</p>
     </div>
   </header>
@@ -50,64 +49,60 @@
     <div class="container">
       <div class="grid-2">
         <div>
-          <h2 style="margin-bottom: 2rem;">Why Choose Swastik Powertech?</h2>
-          <ul class="grid" style="gap: 1.5rem;">
-            <li style="display: flex; gap: 1rem; align-items: flex-start;">
-              <div
-                style="background: var(--bg-surface); padding: 0.5rem; border-radius: 8px; box-shadow: var(--shadow-sm);">
-                <i class="fas fa-check-circle text-primary" style="color: var(--primary); font-size: 1.25rem;"></i>
+          <h2 class="mb-md">Why Choose Swastik Powertech?</h2>
+          <ul class="d-flex" style="flex-direction: column; gap: 1.5rem;">
+            <li class="d-flex items-center gap-md stagger-1">
+              <div class="icon-box-sm">
+                <i class="fas fa-check-circle text-primary"></i>
               </div>
               <div>
-                <strong style="font-size: 1.1rem; display: block; margin-bottom: 0.25rem;">Authorized Dealer</strong>
+                <strong class="font-medium d-block mb-xs">Authorized Dealer</strong>
                 <p class="text-muted">Official authorized dealer for Havells. We also provide premium products from
                   brands like Luminous and Saatvik.</p>
               </div>
             </li>
-            <li style="display: flex; gap: 1rem; align-items: flex-start;">
-              <div
-                style="background: var(--bg-surface); padding: 0.5rem; border-radius: 8px; box-shadow: var(--shadow-sm);">
-                <i class="fas fa-tools" style="color: var(--primary); font-size: 1.1rem;"></i>
+            <li class="d-flex items-center gap-md stagger-2">
+              <div class="icon-box-sm">
+                <i class="fas fa-tools text-primary"></i>
               </div>
               <div>
-                <strong style="font-size: 1.1rem; display: block; margin-bottom: 0.25rem;">Turnkey Solutions</strong>
+                <strong class="font-medium d-block mb-xs">Turnkey Solutions</strong>
                 <p class="text-muted">Complete design, installation, and maintenance for homes and businesses.</p>
               </div>
             </li>
-            <li style="display: flex; gap: 1rem; align-items: flex-start;">
-              <div
-                style="background: var(--bg-surface); padding: 0.5rem; border-radius: 8px; box-shadow: var(--shadow-sm);">
-                <i class="fas fa-certificate" style="color: var(--primary); font-size: 1.25rem;"></i>
+            <li class="d-flex items-center gap-md stagger-3">
+              <div class="icon-box-sm">
+                <i class="fas fa-certificate text-primary"></i>
               </div>
               <div>
-                <strong style="font-size: 1.1rem; display: block; margin-bottom: 0.25rem;">Proven Expertise</strong>
+                <strong class="font-medium d-block mb-xs">Proven Expertise</strong>
                 <p class="text-muted">Over 1.4 MW installed in just 8 months with another 1MW in pipeline.</p>
               </div>
             </li>
           </ul>
         </div>
 
-        <div class="card"
-          style="background: linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%); border: 1px solid #FCD34D;">
-          <div class="card-icon" style="background: white; color: var(--accent);">
+        <div class="card bg-surface-alt border-light">
+          <div class="card-icon text-accent">
             <i class="fas fa-sun"></i>
           </div>
-          <h3 style="color: #92400E; margin-bottom: 1.5rem;">Our Core Offerings</h3>
+          <h3 class="text-secondary mb-md">Our Core Offerings</h3>
 
-          <div style="margin-bottom: 1.5rem;">
-            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #92400E;">Residential Solar</h4>
-            <p style="color: #92400E; opacity: 0.8;">High-efficiency rooftop systems that reduce your electricity bills
+          <div class="mb-md">
+            <h4 class="font-medium mb-xs text-secondary">Residential Solar</h4>
+            <p class="text-muted small">High-efficiency rooftop systems that reduce your electricity bills
               to zero. Subsidies available.</p>
           </div>
 
-          <div style="margin-bottom: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(146, 64, 14, 0.1);">
-            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #92400E;">Commercial & Industrial</h4>
-            <p style="color: #92400E; opacity: 0.8;">Scalable power plants for factories. Reduce OPEX and gain tax
+          <div class="mb-md pt-md border-top-light">
+            <h4 class="font-medium mb-xs text-secondary">Commercial & Industrial</h4>
+            <p class="text-muted small">Scalable power plants for factories. Reduce OPEX and gain tax
               benefits.</p>
           </div>
 
-          <div style="padding-top: 1.5rem; border-top: 1px solid rgba(146, 64, 14, 0.1);">
-            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #92400E;">Solar Pumps & Street Lights</h4>
-            <p style="color: #92400E; opacity: 0.8;">Off-grid solutions for agricultural and infrastructure needs.</p>
+          <div class="pt-md border-top-light">
+            <h4 class="font-medium mb-xs text-secondary">Solar Pumps & Street Lights</h4>
+            <p class="text-muted small">Off-grid solutions for agricultural and infrastructure needs.</p>
           </div>
         </div>
       </div>
@@ -115,20 +110,20 @@
   </section>
 
   <!-- Brands -->
-  <section class="section" style="background: #F8FAFC;">
-    <div class="container">
-      <div style="text-align: center; margin-bottom: 3rem;">
-        <h2 style="margin-bottom: 1rem;">Authorized Partner</h2>
-        <div style="display: flex; justify-content: center;">
+  <section class="section bg-surface-alt">
+    <div class="container text-center">
+      <div class="mb-lg">
+        <h2 class="mb-md">Authorized Partner</h2>
+        <div class="d-flex" style="justify-content: center;">
           <div class="card logo-card" style="width: 100%; max-width: 300px;">
             <img src="assets/solar/company_1.png" alt="Havells" class="partner-logo">
-            <p style="margin-top: 1rem; font-weight: 600; color: var(--primary);">Authorized Dealer</p>
+            <p class="mt-md font-bold text-primary">Authorized Dealer</p>
           </div>
         </div>
       </div>
 
-      <div style="text-align: center;">
-        <h3 style="margin-bottom: 2rem; color: var(--text-muted);">Other Premium Brands We Deal In</h3>
+      <div>
+        <h3 class="mb-lg text-muted">Other Premium Brands We Deal In</h3>
         <div class="grid-2 logo-grid" style="max-width: 600px; margin: 0 auto;">
           <div class="card logo-card">
             <img src="assets/solar/company_2.jpg" alt="Luminous" class="partner-logo">
@@ -143,47 +138,41 @@
 
   <!-- Clients List -->
   <section class="section">
-    <div class="container">
-      <h2 style="text-align: center; margin-bottom: 1rem;">Solar Clients</h2>
-      <p style="text-align: center; color: var(--text-muted); margin-bottom: 3rem;">Trusted by forward-thinking
-        businesses.</p>
+    <div class="container text-center">
+      <h2 class="mb-md">Solar Clients</h2>
+      <p class="text-muted mb-lg">Trusted by forward-thinking businesses.</p>
 
-      <div class="grid-2">
-        <div class="card" style="padding: 1.5rem;">
-          <ul style="display: flex; flex-direction: column; gap: 1rem;">
-            <li
-              style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-light); padding-bottom: 0.5rem;">
-              <strong>RKC Infra Projects</strong> <span class="text-muted">Saha, Haryana</span>
+      <div class="grid-2 text-start">
+        <div class="card p-md">
+          <ul class="d-flex" style="flex-direction: column; gap: 1rem;">
+            <li class="d-flex justify-between border-bottom-light pb-sm">
+              <strong class="font-medium">RKC Infra Projects</strong> <span class="text-muted">Saha, Haryana</span>
             </li>
-            <li
-              style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-light); padding-bottom: 0.5rem;">
-              <strong>SD Industries</strong> <span class="text-muted">Ajnali, Punjab</span>
+            <li class="d-flex justify-between border-bottom-light pb-sm">
+              <strong class="font-medium">SD Industries</strong> <span class="text-muted">Ajnali, Punjab</span>
             </li>
-            <li
-              style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-light); padding-bottom: 0.5rem;">
-              <strong>Aggarsain Agro Foods</strong> <span class="text-muted">Lalauri, Punjab</span>
+            <li class="d-flex justify-between border-bottom-light pb-sm">
+              <strong class="font-medium">Aggarsain Agro Foods</strong> <span class="text-muted">Lalauri, Punjab</span>
             </li>
-            <li style="display: flex; justify-content: space-between;">
-              <strong>Varun Agro Cold Store</strong> <span class="text-muted">Nasrali, Ludhiana</span>
+            <li class="d-flex justify-between">
+              <strong class="font-medium">Varun Agro Cold Store</strong> <span class="text-muted">Nasrali,
+                Ludhiana</span>
             </li>
           </ul>
         </div>
-        <div class="card" style="padding: 1.5rem;">
-          <ul style="display: flex; flex-direction: column; gap: 1rem;">
-            <li
-              style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-light); padding-bottom: 0.5rem;">
-              <strong>Garg Rice Mills</strong> <span class="text-muted">Dharamkot, Moga</span>
+        <div class="card p-md">
+          <ul class="d-flex" style="flex-direction: column; gap: 1rem;">
+            <li class="d-flex justify-between border-bottom-light pb-sm">
+              <strong class="font-medium">Garg Rice Mills</strong> <span class="text-muted">Dharamkot, Moga</span>
             </li>
-            <li
-              style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-light); padding-bottom: 0.5rem;">
-              <strong>Garg Nutri Foods</strong> <span class="text-muted">Dharamkot, Moga</span>
+            <li class="d-flex justify-between border-bottom-light pb-sm">
+              <strong class="font-medium">Garg Nutri Foods</strong> <span class="text-muted">Dharamkot, Moga</span>
             </li>
-            <li
-              style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-light); padding-bottom: 0.5rem;">
-              <strong>Satkartar Autos</strong> <span class="text-muted">Khanna, Punjab</span>
+            <li class="d-flex justify-between border-bottom-light pb-sm">
+              <strong class="font-medium">Satkartar Autos</strong> <span class="text-muted">Khanna, Punjab</span>
             </li>
-            <li style="display: flex; justify-content: space-between;">
-              <strong>Minni Ispat</strong> <span class="text-muted">Mandi Gobindgarh</span>
+            <li class="d-flex justify-between">
+              <strong class="font-medium">Minni Ispat</strong> <span class="text-muted">Mandi Gobindgarh</span>
             </li>
           </ul>
         </div>
@@ -191,44 +180,45 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
+  <footer class="section footer">
     <div class="container">
-      <div class="grid-3" style="gap: 4rem; margin-bottom: 3rem;">
+      <div class="grid-3 mb-xl">
         <div>
-          <a href="#" class="logo" style="color: white; margin-bottom: 1.5rem;">Swastik Enterprise</a>
-          <p style="opacity: 0.7;">Driving the transition towards clean energy. Reliable, sustainable, and future-ready.
-          </p>
+          <a href="#" class="logo mb-md text-main">
+            <img src="assets/logo.png" alt="Swastik Enterprise Logo" style="height: 32px; width: auto;">
+            Swastik Enterprise
+          </a>
+          <p class="text-muted opacity-80">Driving the transition towards clean energy with Swastik Powertech.
+            Reliable, sustainable, and future-ready solutions for all.</p>
         </div>
         <div>
-          <h4 style="color: white; margin-bottom: 1.5rem;">Quick Links</h4>
-          <ul style="display: flex; flex-direction: column; gap: 0.75rem;">
-            <li><a href="index.html" style="opacity: 0.7;">Home</a></li>
-            <li><a href="solar.html" style="opacity: 0.7;">Solar Solutions</a></li>
-            <li><a href="transformers.html" style="opacity: 0.7;">Transformers</a></li>
-            <li><a href="contact.html" style="opacity: 0.7;">Contact Us</a></li>
+          <h4 class="text-main mb-md">Quick Links</h4>
+          <ul class="d-flex" style="flex-direction: column; gap: 0.75rem;">
+            <li><a href="index.html" class="text-muted hover-primary">Home</a></li>
+            <li><a href="solar.html" class="text-muted hover-primary">Solar Solutions</a></li>
+            <li><a href="transformers.html" class="text-muted hover-primary">Transformers</a></li>
+            <li><a href="contact.html" class="text-muted hover-primary">Contact Us</a></li>
           </ul>
         </div>
         <div>
-          <h4 style="color: white; margin-bottom: 1.5rem;">Contact Info</h4>
-          <ul style="display: flex; flex-direction: column; gap: 1rem;">
-            <li style="display: flex; gap: 1rem; opacity: 0.7;">
-              <i class="fas fa-map-marker-alt" style="margin-top: 5px;"></i>
+          <h4 class="text-main mb-md">Contact Info</h4>
+          <ul class="d-flex" style="flex-direction: column; gap: 1rem;">
+            <li class="d-flex gap-md text-muted">
+              <i class="fas fa-map-marker-alt mt-xs"></i>
               <span>GT Road, Near City Police Station 1, Khanna, Punjab</span>
             </li>
-            <li style="display: flex; gap: 1rem; opacity: 0.7;">
-              <i class="fas fa-phone" style="margin-top: 5px;"></i>
+            <li class="d-flex gap-md text-muted">
+              <i class="fas fa-phone mt-xs"></i>
               <span>+91 98150-01168</span>
             </li>
-            <li style="display: flex; gap: 1rem; opacity: 0.7;">
-              <i class="fas fa-envelope" style="margin-top: 5px;"></i>
+            <li class="d-flex gap-md text-muted">
+              <i class="fas fa-envelope mt-xs"></i>
               <span>powertech.swastik@gmail.com</span>
             </li>
           </ul>
         </div>
       </div>
-      <div
-        style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; text-align: center; opacity: 0.5; font-size: 0.9rem;">
+      <div class="border-top-light pt-lg text-center opacity-60 text-sm" style="margin: 1.5rem;">
         <p>&copy; 2025 Swastik Enterprise. All rights reserved.</p>
       </div>
     </div>
